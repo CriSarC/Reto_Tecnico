@@ -44,18 +44,18 @@ canvas.create_rectangle(
     outline="")
 
 canvas.create_rectangle(
-    49.032257080078125,
-    131.61289978027344,
-    812.9032287597656,
-    322.5806427001953,
+    49.0,
+    132.0,
+    810.0,
+    480.0,
     fill="#C5EAEA",
     outline="")
 
 entry_image_1 = PhotoImage(
     file=relative_to_assets("entry_1.png"))
 entry_bg_1 = canvas.create_image(
-    430.0,
-    225.0,
+    428.5,
+    302.0,
     image=entry_image_1
 )
 entry_1 = Text(
@@ -65,14 +65,14 @@ entry_1 = Text(
 )
 entry_1.place(
     x=70.0,
-    y=150.0,
-    width=720.0,
-    height=148.0
+    y=165.0,
+    width=717.0,
+    height=272.0
 )
 
 canvas.create_text(
-    132.90322875976562,
-    148.38710021972656,
+    133.0,
+    162.0,
     anchor="nw",
     text="Pregunta 1\n\n¿Cuál fue...?",
     fill="#000000",
@@ -80,8 +80,8 @@ canvas.create_text(
 )
 
 canvas.create_text(
-    110.96774291992188,
-    51.6129150390625,
+    140.96774291992188,
+    50.6129150390625,
     anchor="nw",
     text="Te doy la bienvenida al juego de Preguntas y Respuestas, ¡¡espero te diviertas!!",
     fill="#000000",
@@ -106,10 +106,10 @@ button_1 = Button(
     relief="flat"
 )
 button_1.place(
-    x=77.41937255859375,
-    y=345.80645751953125,
-    width=340.6451721191406,
-    height=135.48387145996094
+    x=77.0,
+    y=502.0,
+    width=341.0,
+    height=52.0
 )
 
 button_image_2 = PhotoImage(
@@ -122,10 +122,10 @@ button_2 = Button(
     relief="flat"
 )
 button_2.place(
-    x=451.6129150390625,
-    y=345.80645751953125,
-    width=332.9032287597656,
-    height=135.48387145996094
+    x=452.0,
+    y=502.0,
+    width=333.0,
+    height=52.0
 )
 
 button_image_3 = PhotoImage(
@@ -138,10 +138,10 @@ button_3 = Button(
     relief="flat"
 )
 button_3.place(
-    x=77.41937255859375,
-    y=487.741943359375,
-    width=340.6451721191406,
-    height=135.48387145996094
+    x=77.0,
+    y=570.0,
+    width=341.0,
+    height=53.0
 )
 
 button_image_4 = PhotoImage(
@@ -154,10 +154,26 @@ button_4 = Button(
     relief="flat"
 )
 button_4.place(
-    x=451.6129150390625,
-    y=487.741943359375,
-    width=332.9032287597656,
-    height=135.48387145996094
+    x=452.0,
+    y=570.0,
+    width=333.0,
+    height=53.0
+)
+
+button_image_5 = PhotoImage(
+    file=relative_to_assets("button_5.png"))
+button_5 = Button(
+    image=button_image_5,
+    borderwidth=0,
+    highlightthickness=0,
+    command=lambda: print("button_5 clicked"),
+    relief="flat"
+)
+button_5.place(
+    x=845.0,
+    y=559.0,
+    width=205.0,
+    height=47.0
 )
 
 canvas.create_text(
@@ -173,7 +189,7 @@ entry_image_2 = PhotoImage(
     file=relative_to_assets("entry_2.png"))
 entry_bg_2 = canvas.create_image(
     948.0,
-    385.0,
+    325.0,
     image=entry_image_2
 )
 entry_2 = Text(
@@ -185,7 +201,26 @@ entry_2.place(
     x=850.0,
     y=170.0,
     width=196.0,
-    height=428.0
+    height=308.0
+)
+
+entry_image_3 = PhotoImage(
+    file=relative_to_assets("entry_3.png"))
+entry_bg_3 = canvas.create_image(
+    948.0,
+    523.5,
+    image=entry_image_3
+)
+entry_3 = Text(
+    bd=0,
+    bg="#FBEEEE",
+    highlightthickness=0
+)
+entry_3.place(
+    x=850.0,
+    y=507.0,
+    width=196.0,
+    height=31.0
 )
 window.resizable(False, False)
 window.mainloop()
